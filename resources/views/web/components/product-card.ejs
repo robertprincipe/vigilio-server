@@ -1,0 +1,13 @@
+<article class="bg-zinc-500 rounded-lg overflow-hidden" data-aos="fade-up">
+  <img
+    src="https://ih1.redbubble.net/image.398277573.9746/ssrco,classic_tee,womens,denim_heather,front_alt,square_product,600x600.u2.jpg"
+    alt="<%= product.name %>"
+  />
+  <div class="p-3">
+    <h3 class="text-xl font-semibold"><%= product.name %></h3>
+    <p class="font-extrabold text-white my-1 float-right">
+      S/. <%= product.price %>
+    </p>
+    <button-product-cart :product="<%= JSON.stringify(product) %>" />
+  </div>
+</article>
